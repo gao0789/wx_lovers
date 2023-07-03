@@ -2,7 +2,7 @@ name: Timer
 
 on:
   schedule:
-    - cron:  '50 11 * * *'
+    - cron:  '05 4 * * *'
   workflow_dispatch:
 
 jobs:
