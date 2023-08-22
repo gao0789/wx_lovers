@@ -28,9 +28,9 @@ class NotifyUtils extends Service {
         const curBirthStand = dayjs(dateArr.join('-')).valueOf() // 今年的生日
         if(curDate > curBirthStand) {
             const nextBirth = dayjs(curBirthStand).add(1, 'year')
-            return dayjs(nextBirth).diff(curDate, 'day') + 1
+            return dayjs(nextBirth).diff(curDate, 'day')
         } else {
-            return dayjs(curBirthStand).diff(curDate, 'day') + 1 
+            return dayjs(curBirthStand).diff(curDate, 'day')
         }
     }
 
