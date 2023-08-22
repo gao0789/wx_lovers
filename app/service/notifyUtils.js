@@ -17,7 +17,7 @@ class NotifyUtils extends Service {
 
     // 在一起的天数
     getTogetherDays(cur, old) {
-        return dayjs(cur).diff(old, 'day') + 1
+        return dayjs(cur).diff(old, 'day') + 2
     }
 
     // 计算距离生日时间
